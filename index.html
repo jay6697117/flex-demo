@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .wrapper {
+        padding-top: 50px;
+        width: 600px;
+        height: 400px;
+        background-color: #ccc;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+      }
+      .flex1 {
+        order: 3;
+        width: 150px;
+        height: 50px;
+        background-color: lightcyan;
+        border-radius: 20px;
+      }
+      .flex2 {
+        order: 1;
+        width: 150px;
+        height: 50px;
+        background-color: lightgreen;
+        border-radius: 20px;
+      }
+      .flex3 {
+        order: 2;
+        width: 150px;
+        height: 50px;
+        background-color: lightcoral;
+        border-radius: 20px;
+      }
+      .flex4 {
+        order: 0;
+        width: 150px;
+        height: 50px;
+        background-color: lightsteelblue;
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="flex1">子盒子#flex1: 1</div>
+      <div class="flex2">子盒子#flex2: 2</div>
+      <div class="flex3">子盒子#flex3: 3</div>
+      <div class="flex4">子盒子#flex4: 4</div>
+    </div>
+  </body>
+</html>
